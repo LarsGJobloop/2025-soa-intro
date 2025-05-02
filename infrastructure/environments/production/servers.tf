@@ -12,7 +12,7 @@ module "compose_server" {
   hostname            = "services"
   ssh_public_key_file = "${path.root}/id_rsa.pub"
 
-  compose_url      = "https://raw.githubusercontent.com/LarsGJobloop/fullstack-gitops-lite/refs/heads/main/manifests/compose.yaml"
+  compose_url      = "https://raw.githubusercontent.com/LarsGJobloop/2025-soa-intro/refs/heads/main/manifests/compose.yaml"
   refresh_interval = "*/1 * * * *" // Every 1 minute
 
   network_id = hcloud_network.private_network.id
